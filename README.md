@@ -1,4 +1,4 @@
-# vue-cryptocurrency-project
+# test-vue-install
 
 ## Project setup
 ```
