@@ -4,14 +4,13 @@ import Beer from './components/Beer.vue'
 import HelloAlicia from './components/HelloAlicia.vue'
 import HelloWorld from './components/HelloWorld.vue'
 import HomePage from './components/Home.vue'
-import ​Vuetify ​from ​'@/plugins/vuetify' ​// path to vuetify export
- 
+import Vuetify from '@/plugins/vuetify'
+
 Vue.config.productionTip = false
 
 import VueRouter from 'vue-router'
 
 Vue.use(VueRouter)
-
 
 const routePath = [{
   path: '/',
