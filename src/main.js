@@ -1,11 +1,11 @@
 import Vue from 'vue'
 import App from './App.vue'
 import Beer from './components/Beer.vue'
-import HelloAlicia from './components/HelloAlicia.vue'
-import HelloWorld from './components/HelloWorld.vue'
 import HomePage from './components/Home.vue'
-import ​Vuetify ​from ​'@/plugins/vuetify' ​// path to vuetify export
- 
+import BitcoinApi from './components/BitcoinApi.vue'
+
+import vuetify from '@/plugins/vuetify'
+
 Vue.config.productionTip = false
 
 import VueRouter from 'vue-router'
@@ -22,13 +22,10 @@ const routePath = [{
   component: Beer
 },
 {
-  path: '/HelloAlicia',
-  component: HelloAlicia
-},
-{
-  path: '/HelloWorld',
-  component: HelloWorld
-},
+  path: '/BitcoinApi',
+  component: BitcoinApi
+}
+
 ]
 
 const router = new VueRouter({
@@ -39,5 +36,5 @@ const router = new VueRouter({
 new Vue({
   router: router,
   render: h => h(App),
-  Vuetify
+  vuetify
 }).$mount('#app')

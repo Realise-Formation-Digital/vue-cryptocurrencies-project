@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <p> home page = aquí irá el html que yo quiera poner en la página principal </p>
+    <h1>Page Home </h1>
   </div>
 </template>
 
