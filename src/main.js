@@ -4,7 +4,7 @@ import Beer from './components/Beer.vue'
 import HelloAlicia from './components/HelloAlicia.vue'
 import HelloWorld from './components/HelloWorld.vue'
 import HomePage from './components/Home.vue'
-import ​Vuetify ​from ​'@/plugins/vuetify.js' ​// path to vuetify export
+import ​Vuetify ​from ​'@/plugins/vuetify' ​// path to vuetify export
  
 Vue.config.productionTip = false
 
