@@ -1,94 +1,51 @@
 <template>
-  <v-card height="400px">
-    <v-footer
-      v-bind="localAttrs"
-      :padless="padless"
+<dir>
+  <v-footer
+    padless
+  >
+    <v-card
+      flat
+      tile
+      class="indigo lighten-1 white--text text-center"
     >
-      <v-card
-        flat
-        tile
-        width="100%"
-        class="red lighten-1 text-center"
-      >
-        <v-card-text>
-          <v-btn
-            v-for="icon in icons"
-            :key="icon"
-            class="mx-4"
-            icon
-          >
-            <v-icon size="24px">
-              {{ icon }}
-            </v-icon>
-          </v-btn>
-        </v-card-text>
-
-        <v-divider></v-divider>
-
-        <v-card-text class="white--text">
-          {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
-        </v-card-text>
-      </v-card>
-    </v-footer>
-
-    <v-row
-      align="center"
-      justify="center"
-      class="ma-12"
+      <v-card-text>
+        <v-icon
+      large
+      color="green darken-2"
     >
-      <v-col
-        cols="12"
-        md="8"
-      >
-        <v-select
-          v-model="variant"
-          :items="items"
-          clearable
-          label="Variant"
-        ></v-select>
+      accessibility 
+   </v-icon>
+      </v-card-text>
 
-        <v-checkbox
-          v-model="padless"
-          hide-details
-          label="Padless"
-        ></v-checkbox>
-      </v-col>
-    </v-row>
-  </v-card>
+      <v-card-text class="white--text pt-0">
+        Phasellus feugiat arcu sapien, et iaculis ipsum elementum sit amet. Mauris cursus commodo interdum. Praesent ut risus eget metus luctus accumsan id ultrices nunc. Sed at orci sed massa consectetur dignissim a sit amet dui. Duis commodo vitae velit et faucibus. Morbi vehicula lacinia malesuada. Nulla placerat augue vel ipsum ultrices, cursus iaculis dui sollicitudin. Vestibulum eu ipsum vel diam elementum tempor vel ut orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+      </v-card-text>
+
+      <v-divider></v-divider>
+
+      <v-card-text class="white--text">
+        {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
+      </v-card-text>
+    </v-card>
+  </v-footer>
+</dir>
 </template>
 
 <script>
-  export default {
-
+  
+export default {
+    name: 'Footer',
     data: () => ({
       icons: [
+        'mdi-facebook',
+        'mdi-twitter',
         'mdi-home',
-        'mdi-email',
-        'mdi-calendar',
-        'mdi-delete',
+        'mdi-instagram',
       ],
-      items: [
-        'default',
-        'absolute',
-        'fixed',
-      ],
-      padless: false,
-      variant: 'default',
     }),
-    computed: {
-      localAttrs () {
-        const attrs = {}
-
-        if (this.variant === 'default') {
-          attrs.absolute = false
-          attrs.fixed = false
-        } else {
-          attrs[this.variant] = true
-        }
-        return attrs
-      },
-    },
   }
+
+
 </script>
 
 
