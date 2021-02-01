@@ -1,8 +1,7 @@
 <template>
     <div>
         <h1>Page cours du Bitcoin</h1>
-
-        {{fetchApi()}}
+   
         <!--
         <h2>Nom de la crypto : {{ cryptoName}}</h2>
 
@@ -14,74 +13,52 @@
             </p> 
         </div>
         -->
-<v-card>
-    <!--
-    <v-card-title>
-        <v-text-field
-        v-model="search"
-        append-icon="mdi-magnify"
-        label="Search"
-        single-line
-        hide-details
-        >
-        </v-text-field>
-    </v-card-title>
-    -->
-    <v-data-table
-    :headers="headers"
-    :items="desserts"
-    :search="search"
-    >
-        <p>hello world</p>
         
-    </v-data-table>
-</v-card>
-
-        <!--
-        <template>
-            <div>
-                <v-data-table
-                :headers="headers"
-                :items="desserts"
-                item-key="name"
-                class="elevation-1"
-                :search="search"
-                :custom-filter="filterOnlyCapsText"
-                >
-                <template v-slot:top>
-                    <v-text-field
-                    v-model="search"
-                    label="Search (UPPER CASE ONLY)"
-                    class="mx-4"
-                    ></v-text-field>
-                </template>
-                <template v-slot:body.append>
-                    <tr>
-                    <td></td>
-                    <td>
-                        <v-text-field
-                        v-model="calories"
-                        type="number"
-                        label="Less than"
-                        ></v-text-field>
-                    </td>
-                    <td colspan="4"></td>
-                    </tr>
-                </template>
-                </v-data-table>
-            </div>
-        </template>
-        -->
+        <v-data-table
+        :headers="headers"
+        :items="cryptocurrency"
+        :page.sync="page"
+        :items-per-page="itemsPerPage"
+        hide-default-footer
+        class="elevation-1"
+        @page-count="pageCount = $event"
+        >
+        </v-data-table>
+      
     </div>    
 </template>
 
 <script>
 export default {
     name: 'BitcoinApi',
+    async mounted(){
+        await this.fetchApi();
+    },
     data(){
-        return {
-            cryptoName: "",
-            cryptoBpi : []
+        return { 
+            page: 1,
+            pageCount: 0,
+            itemsPerPage: 10,
+            headers: [
+                {
+                    text: 'Chart name',
+                    align: 'start',
+                    sortable: false,
+                    value: 'name',
+                },
+                { text: 'EURO', value: 'euro'},
+                { text: 'GBP', value: 'gbp'},
+                { text: 'USD', value: 'usd'},
+            ],
+            cryptocurrency:[ 
+                {
+                    name: '',
+                    euro: 159,
+                    gbp: 6.0,
+                    usd: 24,
+                }        
+            ],
+              
         }
     },
     methods: {
@@ -90,10 +67,27 @@ export default {
                 // prendre le resultat de l'api
                 const axios = require("axios");
                 const result = await axios.get("https://api.coindesk.com/v1/bpi/currentprice.json");
-                this.cryptoName = result.data.chartName
-                //console.log("Api Bitcoin", result);
-                this.cryptoBpi = result.data.bpi
-                console.log("crypto bpi", this.cryptoBpi.EUR);
+                
+                /*
+                for (let i = 0; i<data.lengt; i++){
+                    const objectToInsert = {
+                        name: data[i].name,
+                        bpi: data[i].bpi
+                    }
+                    this.desserts.push(objectToInsert)
+                }
+                */
+
+                
+                console.log(result.data)
+                this.cryptocurrency[0].name = result.data.chartName;
+                
+                this.cryptocurrency[0].euro = result.data.bpi.EUR.rate;
+                this.cryptocurrency[0].gbp = result.data.bpi.GBP.rate;
+                this.cryptocurrency[0].usd = result.data.bpi.USD.rate;
+
+                console.log("Bitcoin bpi EURO :", result.data.bpi);
+
             } catch (error) {
                 console.log("Erreur:", error);    
             }
