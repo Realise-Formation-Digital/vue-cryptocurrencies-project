@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <p> home page = ici, on verra la page principale qui va correspondre avec le html programmé en Home.vuel </p>
+    <p> Home page = Page Bitcoinlive de Kilian </p>
   </div>
 </template>
 

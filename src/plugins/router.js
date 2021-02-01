@@ -3,7 +3,7 @@ import VueRouter from 'vue-router'
 import Home from "@/components/Home";
 import Beer from "@/components/Beer";
 import HelloAlicia from "@/components/HelloAlicia";
-import HelloWorld from "@/components/HelloWorld";
+import Crypto from "@/components/Crypto";
 
 Vue.use(VueRouter)
 
@@ -21,8 +21,8 @@ const routePath = [
     component: HelloAlicia
   },
   {
-    path: '/HelloWorld',
-    component: HelloWorld
+    path: '/Crypto',
+    component: Crypto
   },
 ]
 
