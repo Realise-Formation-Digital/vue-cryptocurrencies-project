@@ -1,10 +1,11 @@
 <template>
   <div class="hello">
     <div class="hello">
-    <p> List page = Page Api de Gaby et tristan </p>
+    <p> List page = Page Api de Gaby et Tristan </p>
   </div>
     <h1>List page</h1>
-    <button @click="chercherBeer()"> Chercher-Api</button>
+    <button @click="chercherBeer()"> Chercher-Api</button> 
+
 
     <div v-for="(truc, index) in fichierjson" :key="index">
 
@@ -36,7 +37,7 @@ export default {
     async chercherBeer() {
       try {
         const axios = require("axios");
-       const result = await axios.get("https://api.punkapi.com/v2/beers");
+        const result = await axios.get("https://api.punkapi.com/v2/beers");
         console.log("Resultat", result)
         this.fichierjson = result.data
 

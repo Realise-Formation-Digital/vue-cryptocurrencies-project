@@ -1,48 +1,45 @@
 <template>
   <div>
-
-     
       <v-toolbar
-        padless
-        class="#3F51B5"        
+         flat
+         title
+         padless
+           class="indigo lighten-1" 
       >
-      
+
       <v-app-bar-nav-icon></v-app-bar-nav-icon>
 
-
-
       <v-toolbar-title>Cryptocurrency</v-toolbar-title>
+
         <v-spacer></v-spacer>
         <v-btn
+            depressed
+            class="indigo lighten-1" 
             to="/">
             Home Page
         </v-btn>    
-      <v-spacer></v-spacer>
+       <v-spacer></v-spacer>
         <v-btn
+            depressed
+            class="indigo lighten-1" 
             to="/HelloAlicia">
             About Us
         </v-btn>   
         <v-spacer></v-spacer>
         <v-btn
+            depressed
+            class="indigo lighten-1" 
             to="/Crypto">
             Crypto
         </v-btn>      
         <v-spacer></v-spacer>
         <v-btn
+           depressed
+            class="indigo lighten-1" 
             to="/Beer">
             List Page
         </v-btn>       
-      <v-btn icon>
-        <v-icon>mdi-magnify</v-icon>
-      </v-btn>
-
-      <v-btn icon>
-        <v-icon>mdi-heart</v-icon>
-      </v-btn>
-
-      <v-btn icon>
-        <v-icon>mdi-dots-vertical</v-icon>
-      </v-btn>
+      
     </v-toolbar>
 
   </div>
@@ -56,4 +53,11 @@ export default {
 
 <style>
 
+<style>
+ v-app-bar-nav-icon{
+    background-color:#3F51B5;
+ }
 </style>
+
+
+
