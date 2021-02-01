@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <p> home page = aquí irá el html que yo quiera poner en la página principal </p>
+    <p> home page = ici, on verra la page principale qui va correspondre avec le html programmé en Home.vuel </p>
   </div>
 </template>
 
