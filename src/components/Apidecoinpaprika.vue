@@ -1,11 +1,11 @@
 <template>
-  <div class="hello">
-    <div class="hello">
-    <p> Api Coinpaprika/ exchanges </p>
+  <div>
+    <div>
+    <h2> Api Coinpaprika/exchanges </h2> 
+    <br>
   </div>
-    <h1> </h1>
-    <button @click="chercherAPI()"> Chercher-Api</button> 
-
+    
+   <!-- <button @click="chercherAPI()"> Chercher-Api</button>   -->
 
     <div v-for="(truc, index) in fichierjson" :key="index">
 
@@ -32,7 +32,12 @@ export default {
       fichierjson: []
     }
   },
-  methods: {
+
+ async created() {
+     await this.chercherAPI()
+  },
+ 
+ methods: {
 
     async chercherAPI() {
       try {
