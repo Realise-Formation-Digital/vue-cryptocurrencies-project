@@ -29,6 +29,13 @@
         <v-btn
             depressed
             class="indigo lighten-1" 
+            to="/Information">
+            Information
+        </v-btn>  
+        <v-spacer></v-spacer>
+        <v-btn
+            depressed
+            class="indigo lighten-1" 
             to="/Crypto">
             Crypto
         </v-btn>      
@@ -36,9 +43,16 @@
         <v-btn
            depressed
             class="indigo lighten-1" 
-            to="/Beer">
+            to="/BitcoinApi">
             List Page
-        </v-btn>       
+        </v-btn>      
+        <v-spacer></v-spacer>
+        <v-btn
+           depressed
+            class="indigo lighten-1" 
+            to="/Apidecoinpaprika">
+            Api-Coinpaprika
+        </v-btn>     
       
     </v-toolbar>
 
