@@ -2,8 +2,9 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from "@/components/Home";
 import BitcoinApi from "@/components/BitcoinApi";
-import HelloAlicia from "@/components/HelloAlicia";
+import FormulaireContact from "@/components/FormulaireContact";
 import Crypto from "@/components/Crypto";
+import GoogleMap from "@/components/GoogleMap";
 import Information from "@/components/Information";
 import Apidecoinpaprika from "@/components/Apidecoinpaprika";
 import AboutUs from '@/components/AboutUs';
@@ -20,8 +21,8 @@ const routePath = [
     component: BitcoinApi
   },
   {
-    path: '/HelloAlicia',
-    component: HelloAlicia
+    path: '/Contact',
+    component: FormulaireContact
   },
   {
     path: '/about-us',
@@ -38,6 +39,10 @@ const routePath = [
   {
     path: '/Apidecoinpaprika',
     component: Apidecoinpaprika
+  },
+  {
+    path: '/GoogleMap',
+    component: GoogleMap
   },
 ]
 

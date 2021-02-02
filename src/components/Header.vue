@@ -18,27 +18,6 @@
             to="/">
             Home Page
         </v-btn>    
-       <v-spacer></v-spacer>
-        <v-btn
-            depressed
-            class="indigo lighten-1" 
-            to="/HelloAlicia">
-            About Us
-        </v-btn>   
-        <v-spacer></v-spacer>
-        <v-btn
-            depressed
-            class="indigo lighten-1" 
-            to="/Information">
-            Information
-        </v-btn>  
-        <v-spacer></v-spacer>
-        <v-btn
-            depressed
-            class="indigo lighten-1" 
-            to="/Crypto">
-            Crypto
-        </v-btn>      
         <v-spacer></v-spacer>
         <v-btn
            depressed
@@ -53,6 +32,28 @@
             to="/Apidecoinpaprika">
             Api-Coinpaprika
         </v-btn>     
+       <v-spacer></v-spacer>
+        <v-btn
+            depressed
+            class="indigo lighten-1" 
+            to="/Information">
+            Information
+        </v-btn>  
+       <v-spacer></v-spacer>
+        <v-btn
+            depressed
+            class="indigo lighten-1" 
+            to="/Contact">
+            Contact Us
+        </v-btn>        
+       <v-spacer></v-spacer>
+        <v-btn
+            depressed
+            class="indigo lighten-1" 
+            to="/GoogleMap">
+            GoogleMap
+        </v-btn>    
+        
       
     </v-toolbar>
 
