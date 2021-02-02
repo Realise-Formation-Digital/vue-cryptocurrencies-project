@@ -1,4 +1,4 @@
-# vue-cryptocurrency-project
+# projet_crypto
 
 ## Project setup
 ```
