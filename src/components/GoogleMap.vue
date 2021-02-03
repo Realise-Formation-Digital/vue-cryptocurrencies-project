@@ -21,8 +21,8 @@
     <h3>Nous sommes aussi present?</h3>
     <ul>
       <li><a href="https://www.facebook.com/RealiseGeneve" rel="noopener">Facebook</a></li>
-      <li><a href="https://www.youtube.com/channel/UC7cMk5JX4utTJEL3zHFnuMw/featured" target="_blank" rel="noopener">Youtube</a></li>
-      <li><a href="https://www.linkedin.com/company/r-alise/?originalSubdomain=fr" target="_blank" rel="noopener">Linkedin</a></li>
+      <li><a href="https://www.youtube.com/channel/UC7cMk5JX4utTJEL3zHFnuMw/featured" rel="noopener">Youtube</a></li>
+      <li><a href="https://www.linkedin.com/company/r-alise/?originalSubdomain=fr" rel="noopener">Linkedin</a></li>
       <!-- Add font awesome icons
       <li><a href="https://www.facebook.com/RealiseGeneve" class="fa fa-facebook"></a></li>
       <li><a href="https://www.youtube.com/channel/UC7cMk5JX4utTJEL3zHFnuMw/featured" class="fa fa-youtube"></a></li>
@@ -30,7 +30,7 @@
     </ul>
     <h3>Nous contacter</h3>
     <ul>
-      <a href="https://realise.ch/fr/home-page" target="_blank" rel="noopener">Réalise Genève</a>
+      <a href="https://realise.ch/fr/home-page" rel="noopener">Réalise Genève</a>
     </ul>
   </div>
 </template>
