@@ -8,15 +8,15 @@
     <br>
     <h3>Informations</h3>
     <ul>
-      <li><a href="https://api.coinpaprika.com/" target="_blank"
+      <li><a href="https://api.coinpaprika.com/"  
              rel="noopener">Coinpaprika</a></li>
-      <li><a href="https://cryptoast.fr/crypto-monnaie-explication-definition/" target="_blank"
+      <li><a href="https://cryptoast.fr/crypto-monnaie-explication-definition/"  
              rel="noopener">Crypto-monnaie</a></li>
-      <li><a href="https://static.coinpaprika.com/storage/cdn/whitepapers/215.pdf" target="_blank" rel="noopener">Bitcoin</a></li>
-      <li><a href="https://www.bitcoinsuisse.com/" target="_blank" rel="noopener">Bitcoin Suissem</a></li>
-      <li><a href="https://coinmarketcap.com/" target="_blank" rel="noopener">CoinMarket Cap</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://economictimes.indiatimes.com/topic/cryptocurrency/news" target="_blank" rel="noopener">News</a></li>
+      <li><a href="https://static.coinpaprika.com/storage/cdn/whitepapers/215.pdf"  rel="noopener">Bitcoin</a></li>
+      <li><a href="https://www.bitcoinsuisse.com/" rel="noopener">Bitcoin Suissem</a></li>
+      <li><a href="https://coinmarketcap.com/" rel="noopener">CoinMarket Cap</a></li>
+      <li><a href="https://www.frandroid.com/crypto-monnaie/478343_bitcoin-nous-avons-essaye-cinq-sites-pour-acheter-vendre-et-echanger-des-cryptomonnaies" rel="noopener">Frandroid_comparaisons</a></li>
+      <li><a href="https://economictimes.indiatimes.com/topic/cryptocurrency/news" rel="noopener">News</a></li>
     </ul>
     
   </div>
@@ -33,5 +33,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+.hello{
+  text-align: left;
+}
 </style>
