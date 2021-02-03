@@ -4,11 +4,13 @@
          flat
          title
          padless
-           class="indigo lighten-1" 
+         class="indigo lighten-1" 
+         
       >
 
       <v-app-bar-nav-icon></v-app-bar-nav-icon>
-
+     <!--  <img alt="Vue logo" src="./assets/logo.png">  -->
+      
       <v-toolbar-title>Cryptocurrency</v-toolbar-title>
 
         <v-spacer></v-spacer>
