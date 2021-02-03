@@ -21,8 +21,8 @@
         <section>
             <h2>Nos Conseils</h2>
             <p>Le cours des cryptomonnaies est basée sur le principe d'offre et demande en économie. Ce qui signifie que plus la demande est grande, plus le prix augmente.<br>
-            En d'autres termes, la rareté définit le prix. L'offre a également un rôle important vu que les cryptomonnaies comme le Bitcoin se basent sur le "Halving"<br>
-            Ce volume diminue de moitié tous les 4 ans, lors d'un évènement appelé le « Halving ». Ce procédé permet d'augmenter peu à peu la rareté de la cryptomonnaie, en rendant de plus en plus difficile son obtention par le minage.
+            En d'autres termes, la rareté définit le prix. L'offre a également un rôle important vu que les cryptomonnaies comme le Bitcoin se basent sur le Halving<br>
+            Ce volume diminue de moitié tous les 4 ans, lors d'un évènement appelé le Halving. Ce procédé permet d'augmenter peu à peu la rareté de la cryptomonnaie, en rendant de plus en plus difficile son obtention par le minage.
             <br> Il a pour but d'imiter les ressources naturelles comme les métaux précieux et de protéger la devise virtuelle de l'hyperinflation.
             </p>
         </section>
