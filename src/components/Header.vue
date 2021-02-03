@@ -1,26 +1,76 @@
 <template>
   <div>
-        <section id="Header">
-            <h1> test header </h1>
+      <v-toolbar
+         flat
+         title
+         padless
+           class="indigo lighten-1" 
+      >
 
-        </section>
+      <v-app-bar-nav-icon></v-app-bar-nav-icon>
+
+      <v-toolbar-title>Cryptocurrency</v-toolbar-title>
+
+        <v-spacer></v-spacer>
+        <v-btn
+            depressed
+            class="indigo lighten-1" 
+            to="/">
+            Home Page
+        </v-btn>    
+        <v-spacer></v-spacer>
+        <v-btn
+           depressed
+            class="indigo lighten-1" 
+            to="/BitcoinApi">
+            List Page
+        </v-btn>      
+        <v-spacer></v-spacer>
+        <v-btn
+           depressed
+            class="indigo lighten-1" 
+            to="/Apidecoinpaprika">
+            Api-Coinpaprika
+        </v-btn>     
+       <v-spacer></v-spacer>
+        <v-btn
+            depressed
+            class="indigo lighten-1" 
+            to="/Information">
+            Information
+        </v-btn>  
+       <v-spacer></v-spacer>
+        <v-btn
+            depressed
+            class="indigo lighten-1" 
+            to="/Contact">
+            Contact Us
+        </v-btn>        
+       <v-spacer></v-spacer>
+        <v-btn
+            depressed
+            class="indigo lighten-1" 
+            to="/GoogleMap">
+            GoogleMap
+        </v-btn>    
+        
+      
+    </v-toolbar>
+
   </div>
 </template>
 
 <script>
-
 export default {
   name: 'Header'
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+ v-app-bar-nav-icon{
+    background-color:#3F51B5;
+ }
 </style>
+
+
+

@@ -1,8 +1,6 @@
-
 <template>
-  <v-app>
+   <v-app id="idapp">
     <Header/>
-    <Home/>
     <v-main>
       <v-container
           fluid
@@ -10,24 +8,31 @@
         <router-view></router-view>
       </v-container>
     </v-main>
-  <Footer/>
+    <Footer/>
   </v-app>
 </template>
 
 <script>
 import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
-import Home from './components/Home.vue'
+
 export default {
   name: 'App',
   components: {
     Header,
-    Footer,
-    Home
+    Footer
   }
 }
 </script>
 
 <style>
-
+  #idapp{
+   margin: 0; 
+   padding: 0;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale; 
+   text-align: center;
+   background-color: #8facce;
+   min-height: 100vh;
+}
 </style>
