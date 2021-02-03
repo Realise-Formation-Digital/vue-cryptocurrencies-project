@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+   <v-app id="idapp">
     <Header/>
     <v-main>
       <v-container
@@ -26,5 +26,13 @@ export default {
 </script>
 
 <style>
-
+  #idapp{
+   margin: 0; 
+   padding: 0;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale; 
+   text-align: center;
+   background-color: #8facce;
+   min-height: 100vh;
+}
 </style>

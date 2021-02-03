@@ -2,7 +2,7 @@
     <div class="bitcoinlive">
       <h1> Bitcoin live price </h1>
       <p><v-btn to="/about-us">Go to About Us</v-btn>
-      <v-btn depressed> </v-btn>
+      <v-btn depressed color = #8facce> </v-btn>
       <v-btn to="/">Retourn</v-btn></p>
       <br>
       <iframe src="https://bitcoinity.org"

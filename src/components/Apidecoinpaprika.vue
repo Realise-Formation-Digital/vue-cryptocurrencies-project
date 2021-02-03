@@ -5,18 +5,33 @@
     <br>
   </div>
     
-   <!-- <button @click="chercherAPI()"> Chercher-Api</button>   -->
+   <!-- <button @click="chercherAPI()"> Chercher-Api</button>    
 
-    <div v-for="(truc, index) in fichierjson" :key="index">
+    <div v-for="(truc, index) in fichierjson" :key="index">  -->
 
-      <p>
+  <table class="table table-striped white blue--text" > 
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr v-for="(truc, index) in fichierjson" :key="index">
+       <th scope="row">{{ truc.name }}</th>  
+       <td>{{ truc.description }}</td>      
+    </tr>
+   </tbody>
+</table>
+
+
+     <!-- <p>
         Name: {{ truc.name }}
         <br>
         Description: {{ truc.description }}
+      </p>    -->
 
-      </p>
-
-    </div>
+    <!-- </div> -->
 
   </div>
 </template>
@@ -57,5 +72,21 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+ .table th, .table td {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+.table th {
+  text-align: center;
+}
+.table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  padding: 8px;
+}
 </style>

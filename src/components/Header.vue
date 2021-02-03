@@ -67,8 +67,6 @@ export default {
 </script>
 
 <style>
-
-<style>
  v-app-bar-nav-icon{
     background-color:#3F51B5;
  }

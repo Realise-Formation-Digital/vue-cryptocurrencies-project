@@ -1,7 +1,7 @@
 <template>
     <div class="bitcoinlive">
       <v-btn to="/about-us">Go to About Us</v-btn> 
-      <v-btn depressed> </v-btn>
+      <v-btn depressed color = #8facce> </v-btn>
      <v-btn to="/Crypto">Go to Bitcoinlive</v-btn>  
       <h1>Petite présentation</h1>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/bJhT9-9uM3M" 

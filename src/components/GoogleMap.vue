@@ -20,7 +20,7 @@
         info@realise.ch </p>
     <h3>Nous sommes aussi present?</h3>
     <ul>
-      <li><a href="https://www.facebook.com/RealiseGeneve" target="_blank" rel="noopener">Facebook</a></li>
+      <li><a href="https://www.facebook.com/RealiseGeneve" rel="noopener">Facebook</a></li>
       <li><a href="https://www.youtube.com/channel/UC7cMk5JX4utTJEL3zHFnuMw/featured" target="_blank" rel="noopener">Youtube</a></li>
       <li><a href="https://www.linkedin.com/company/r-alise/?originalSubdomain=fr" target="_blank" rel="noopener">Linkedin</a></li>
       <!-- Add font awesome icons
