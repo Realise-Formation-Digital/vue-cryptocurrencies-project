@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>
-    <h2> Api Coinpaprika/exchanges </h2> 
+    <h2> API Coinpaprika/exchanges </h2> 
     <br>
   </div>
     
@@ -23,15 +23,6 @@
     </tr>
    </tbody>
 </table>
-
-
-     <!-- <p>
-        Name: {{ truc.name }}
-        <br>
-        Description: {{ truc.description }}
-      </p>    -->
-
-    <!-- </div> -->
 
   </div>
 </template>
@@ -65,12 +56,12 @@ export default {
         console.error(err)
       }
     }
-
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
+
 <style scoped>
  .table th, .table td {
   font-family: Arial, Helvetica, sans-serif;
