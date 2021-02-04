@@ -3,7 +3,7 @@
     <h1>Cryptomonnaies</h1><br>
     <p>
      Comparatif des meilleures plateformes pour acheter et vendre des Bitcoins<br>
-      <a href="https://www.clubic.com/antivirus-securite-informatique/cryptage-cryptographie/crypto-monnaie/article-877095-1-comparatif-plateformes-crypto-meilleur-service-acheter-vendre-cryptomonnaies-8201.html" target="_blank" rel="noopener">vue-click plateformes</a>.
+      <a href="https://www.clubic.com/antivirus-securite-informatique/cryptage-cryptographie/crypto-monnaie/article-877095-1-comparatif-plateformes-crypto-meilleur-service-acheter-vendre-cryptomonnaies-8201.html"  rel="noopener">vue-click plateformes</a>
     </p>
     <br>
     <h3>Informations</h3>

@@ -3,11 +3,17 @@ import VueRouter from 'vue-router'
 import Home from "@/components/Home";
 import BitcoinApi from "@/components/BitcoinApi";
 import FormulaireContact from "@/components/FormulaireContact";
-import Crypto from "@/components/Crypto";
+// import Crypto from "@/components/Crypto";
 import GoogleMap from "@/components/GoogleMap";
 import Information from "@/components/Information";
 import Apidecoinpaprika from "@/components/Apidecoinpaprika";
-import AboutUs from '@/components/AboutUs';
+// import AboutUs from '@/components/AboutUs';
+import HomePageKilian from "@/components/HomePageKilian";
+import Bitcoinlive from "@/components/Bitcoinlive";
+import Cryptocurrency from "@/components/Cryptocurrency";
+import PresentationCcs from '@/components/PresentationCcs';
+
+
 
 Vue.use(VueRouter)
 
@@ -25,12 +31,24 @@ const routePath = [
     component: FormulaireContact
   },
   {
-    path: '/about-us',
-    component: AboutUs
+    path: '/GoogleMap',
+    component: GoogleMap
   },
   {
-    path: '/Crypto',
-    component: Crypto
+    path: '/HomePageKilian',
+    component: HomePageKilian
+  },
+  {
+    path: '/Cryptocurrency',
+    component: Cryptocurrency
+  },
+  {
+    path: '/Bitcoinlive',
+    component: Bitcoinlive
+  },
+  {
+    path: '/PresentationCcs',
+    component: PresentationCcs
   },
   {
     path: '/Information',
@@ -39,10 +57,6 @@ const routePath = [
   {
     path: '/Apidecoinpaprika',
     component: Apidecoinpaprika
-  },
-  {
-    path: '/GoogleMap',
-    component: GoogleMap
   },
 ]
 
